@@ -1,0 +1,10 @@
+*.pdf
+.DS_Store
+v8.log
+node_modules
+*.pid
+*.log
+build
+*.diff
+book.md
+exports/*
