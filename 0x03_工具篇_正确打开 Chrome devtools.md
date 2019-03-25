@@ -109,20 +109,20 @@ heapdump.writeSnapshot('./test' + '.heapsnapshot');
 
 ![image.png](https://cdn.nlark.com/yuque/0/2019/png/155185/1552379874614-ca7f7223-384e-45ba-871d-6e143a7710a7.png#align=left&display=inline&height=364&name=image.png&originHeight=601&originWidth=372&size=45282&status=done&width=225)
 
-这里的 1 为根节点，即 GC 根，那么对于对象 6 来说，如果我们想要让对象 6 回收（即从 GC 根不可达），仅仅去掉对象 4 或者对象 3 对于对象 6 的引是不够的，因为显然从根节点 1 可以分别从对象 3 或者对象 4 遍历到对象 6。因此我们只有去掉对象 2 才能将对象 6 回收，所以在上面这个图中，对象 6 的直接支配者是对象 2。照着这个思路，我们可以通过一定的算法将上述简化后的堆内存关系图转化为支配树：
+这里的 1 为根节点，即 GC 根，那么对于对象 5 来说，如果我们想要让对象 5 回收（即从 GC 根不可达），仅仅去掉对象 4 或者对象 3 对于对象 5 的引用是不够的，因为显然从根节点 1 可以分别从对象 3 或者对象 4 遍历到对象 5。因此我们只有去掉对象 2 才能将对象 5 回收，所以在上面这个图中，对象 5 的直接支配者是对象 2。照着这个思路，我们可以通过一定的算法将上述简化后的堆内存关系图转化为支配树：
 
 ![image.png](https://cdn.nlark.com/yuque/0/2019/png/155185/1552379913774-ad9ae282-8c2b-4b6e-ba1b-f293112c6262.png#align=left&display=inline&height=357&name=image.png&originHeight=589&originWidth=832&size=94049&status=done&width=504)
 
 对象 1 到对象 8 间的支配关系描述如下：
 * 对象 1 支配对象 2
-* 对象 2 支配对象 3 、4 和 6
-* 对象 3 支配对象 5
-* 对象 5 支配对象 8
-* 对象 6 支配对象 7
+* 对象 2 支配对象 3 、4 和 5
+* 对象 4 支配对象 6
+* 对象 5 支配对象 7
+* 对象 6 支配对象 8
 
 好了，到这里我们可以开始解释什么是 Shallow Size 和 Retained Size 了，实际上对象的 **Shallow Size 就是对象自身被创建时，在 V8 堆上分配的大小**，结合上面的例子，即对象 1 到 8 自身的大小。对象的 **Retained Size 则是把此对象从堆上拿掉，则 Full GC 后 V8 堆能够释放出的空间大小**。同样结合上面的例子，支配树的叶子节点对象 3、对象 7 和对象 8 因为没有任何直接支配对象，因此其 Retained Size 等于其 Shallow Size。
 
-将剩下的非叶子节点可以一一展开，为了篇幅描述方便，SZ_6 表示对象 6 的 Shallow Size，RZ_6 表示对象 6 的 Retained Size，那么可以得到如下结果：
+将剩下的非叶子节点可以一一展开，为了篇幅描述方便，SZ_5 表示对象 5 的 Shallow Size，RZ_5 表示对象 5 的 Retained Size，那么可以得到如下结果：
 * 对象 3 的 Retained Size：RZ_3 = SZ_3
 * 对象 7 的 Retained Size：RZ_7 = SZ_7
 * 对象 8 的 Retained Size：RZ_8 = SZ_8
