@@ -15,8 +15,11 @@
   * <a href="/0x03_%E5%B7%A5%E5%85%B7%E7%AF%87_%E6%AD%A3%E7%A1%AE%E6%89%93%E5%BC%80%20Chrome%20devtools.md">正确打开 Chrome devtools</a>
   * <a href="/0x04_%E5%B7%A5%E5%85%B7%E7%AF%87_Node.js%20%E6%80%A7%E8%83%BD%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md">Node.js 性能平台使用指南</a>
 * 第三部分：第三部分：实践篇之一 - 专治疑难杂症
-  * <a href="/0x05_%E5%88%A9%E7%94%A8%20CPU%20%E5%88%86%E6%9E%90%E8%B0%83%E4%BC%98%E5%90%9E%E5%90%90%E9%87%8F.md">利用 CPU 分析调优吞吐量</a>
-  * // TODO: 未完待续
+  * <a href="/0x05_%E5%AE%9E%E8%B7%B5%E7%AF%87_%E5%88%A9%E7%94%A8%20CPU%20%E5%88%86%E6%9E%90%E8%B0%83%E4%BC%98%E5%90%9E%E5%90%90%E9%87%8F.md">利用 CPU 分析调优吞吐量</a>
+* 附录一：更多 Node.js 性能优化实践分享
+  * <a href="/0x06_%E5%AE%9E%E8%B7%B5%E7%AF%87_Teambition%E5%90%8E%E7%AB%AF%E6%9C%8D%E5%8A%A1%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93.md">Teambition 后端服务性能优化总结</a>
+
+// TODO: 未完待续
 
 ## 相关专栏
 
@@ -42,7 +45,8 @@
 
 以下贡献数据来自 `git summary`:
 
-* [hyj1991](https://github.com/hyj1991)  <small>100.0% ( 7 commits )</small>
+* [hyj1991](https://github.com/hyj1991)  <small>88.9% ( 8 commits )</small>
+* [richardwei195](https://github.com/richardwei195) <small>11.1% ( 1 commits )</small>
 
 ## LICENSE
 
