@@ -24,6 +24,26 @@
 
 知乎 Egg.js 核心团队运营的专栏也有许多 Egg.js/Node.js 各路大神的分享，欢迎关注，地址：https://zhuanlan.zhihu.com/eggjs
 
+## 贡献方式
+
+本手册目的是帮助 Node.js 开发者能更好地来应对开发过程中的各种问题，能更多的建立起使用 Node.js 踏足服务端领域的信心，也希望能让天下没有难用的 Node.js。我们非常欢迎大家有合适的案例和最佳实践来和大家一起分享。
+
+参与方法如下：
+
+* Fork 本仓库至你自己的 Github 仓库列表中
+* Clone 你 Fork 出来的仓库至本地开发
+* 添加你的案例或者最佳实践至合适的位置
+* 添加 README.md 中对应的描述，提交至你的远程仓库
+* 在 [PR](https://github.com/aliyun-node/Node.js-Troubleshooting-Guide/pulls) 页面选择 **New Pull Request**，继续选择 **compare across forks**，在列表中选中你的 Fork，然后创建新的 PR
+
+我们会在 Review 后选择合并至本仓库内，贡献者也会在 README.md 中的贡献者列表中展示。
+
+## 贡献列表
+
+以下贡献数据来自 `git summary`:
+
+* [hyj1991](https://github.com/hyj1991)  <small>100.0% ( 7 commits )</small>
+
 ## LICENSE
 
 本书采用 **保持署名—非商用** 创意共享 4.0 许可证。
