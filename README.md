@@ -18,6 +18,12 @@
   * <a href="/0x05_%E5%88%A9%E7%94%A8%20CPU%20%E5%88%86%E6%9E%90%E8%B0%83%E4%BC%98%E5%90%9E%E5%90%90%E9%87%8F.md">利用 CPU 分析调优吞吐量</a>
   * // TODO: 未完待续
 
+## 相关专栏
+
+本手册也会在云栖社区同步更新，我们的云栖社区 **Node.js 性能平台** 专栏有更多 Node.js 相关的技术分享，欢迎订阅，地址：https://yq.aliyun.com/teams/210
+
+知乎 Egg.js 核心团队运营的专栏也有许多 Egg.js/Node.js 各路大神的分享，欢迎关注，地址：https://zhuanlan.zhihu.com/eggjs
+
 ## LICENSE
 
 本书采用 **保持署名—非商用** 创意共享 4.0 许可证。
