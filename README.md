@@ -50,8 +50,9 @@
 
 以下贡献数据来自 `git summary`:
 
-* [hyj1991](https://github.com/hyj1991)  <small>92.3% ( 12 commits )</small>
-* [richardwei195](https://github.com/richardwei195) <small>7.7% ( 1 commits )</small>
+* [hyj1991](https://github.com/hyj1991)  <small>85.7%% ( 12 commits )</small>
+* [richardwei195](https://github.com/richardwei195) <small>7.1% ( 1 commits )</small>
+* [Hui Hui](https://github.com/huihuimoe) <small>7.1% ( 1 commits )</small>
 
 ## LICENSE
 

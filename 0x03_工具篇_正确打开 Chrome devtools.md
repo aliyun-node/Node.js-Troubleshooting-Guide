@@ -85,7 +85,7 @@ npm install heapdump --save
 接着可以在代码中按照如下方法使用此模块：
 
 ```javascript
-'use sytrict';
+'use strict';
 
 const heapdump = require('heapdump');
 heapdump.writeSnapshot('./test' + '.heapsnapshot');

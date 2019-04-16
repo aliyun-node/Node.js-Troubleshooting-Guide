@@ -91,7 +91,7 @@ const fn = ejs.compile(tpl, {
 });
 ```
 
-然后打包后进行压测，此时单机 QPS 从 600 提升至** 4000 **左右，基本达到了上线前的性能预期，为了确认压测下是否还有模板的编译动作，我们继续在 [Node.js 性能平台](https://www.aliyun.com/product/nodejs) 上抓取压测期间 3 分钟的 CPU Profile：<br />
+然后打包后进行压测，此时单机 QPS 从 600 提升至 **4000** 左右，基本达到了上线前的性能预期，为了确认压测下是否还有模板的编译动作，我们继续在 [Node.js 性能平台](https://www.aliyun.com/product/nodejs) 上抓取压测期间 3 分钟的 CPU Profile：<br />
 ![image.png](https://cdn.nlark.com/yuque/0/2019/png/155185/1552633282580-8666926c-4a8f-44a8-abe1-69c21af16731.png#align=left&display=inline&height=290&name=image.png&originHeight=478&originWidth=1479&size=87063&status=done&width=896)
 
 可以看到上述对 koa-ejs 模板进行优化后，ejs.compile 确实消失了，而压测期间不再有大量重复且耗费 CPU 的编译动作后，应用整体的性能比最开始有了 **20** 倍左右的提升。文中 koa-ejs 模块缓存问题已经在 4.1.2 版本（包含）之后被修复了，详情可以见 [cache include file](https://github.com/koajs/ejs/pull/45/files)，如果大家使用的 koa-ejs 版本 >= 4.1.2 就可以放心使用。
