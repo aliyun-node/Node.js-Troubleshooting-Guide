@@ -20,6 +20,7 @@
   * <a href="/0x08_%E5%AE%9E%E8%B7%B5%E7%AF%87_%E7%BB%BC%E5%90%88%E6%80%A7%20GC%20%E9%97%AE%E9%A2%98%E5%92%8C%E4%BC%98%E5%8C%96.md">综合性 GC 问题和优化</a>
 * 第四部分：实践篇之二 - 更极端的难题
   * <a href="/0x09_%E5%AE%9E%E8%B7%B5%E7%AF%87_%E7%B1%BB%E6%AD%BB%E5%BE%AA%E7%8E%AF%E5%AF%BC%E8%87%B4%E8%BF%9B%E7%A8%8B%E9%98%BB%E5%A1%9E.md">类死循环导致进程阻塞</a>
+  * <a href="/0x10_%E5%AE%9E%E8%B7%B5%E7%AF%87_%E9%9B%AA%E5%B4%A9%E5%9E%8B%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E9%97%AE%E9%A2%98.md">雪崩型内存泄漏问题</a>
 
 * 附录一：更多 Node.js 性能优化实践分享
   * <a href="/0x06_%E5%AE%9E%E8%B7%B5%E7%AF%87_Teambition%20%E5%90%8E%E7%AB%AF%E6%9C%8D%E5%8A%A1%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93.md">后端服务性能优化总结</a>（来自 Teambition）
@@ -50,9 +51,9 @@
 
 以下贡献数据来自 `git summary`:
 
-* [hyj1991](https://github.com/hyj1991)  <small>85.7%% ( 12 commits )</small>
-* [richardwei195](https://github.com/richardwei195) <small>7.1% ( 1 commits )</small>
-* [Hui Hui](https://github.com/huihuimoe) <small>7.1% ( 1 commits )</small>
+* [hyj1991](https://github.com/hyj1991)  <small>86.7%% ( 13 commits )</small>
+* [richardwei195](https://github.com/richardwei195) <small>6.7% ( 1 commits )</small>
+* [Hui Hui](https://github.com/huihuimoe) <small>6.7% ( 1 commits )</small>
 
 ## LICENSE
 
